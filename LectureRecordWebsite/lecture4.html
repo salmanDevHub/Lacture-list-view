@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Lecture 4 - Web Technologies</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.section{
+background:#f9fbff;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+.section h2{
+color:#2a5298;
+margin-bottom:10px;
+}
+
+.section ul{
+padding-left:20px;
+}
+
+.section li{
+margin:6px 0;
+}
+
+.examples{
+background:#eef3ff;
+padding:10px;
+border-left:5px solid #2a5298;
+margin-top:10px;
+}
+
+.nav-buttons{
+text-align:center;
+margin-top:30px;
+}
+
+.nav-buttons a{
+background:#2a5298;
+color:white;
+padding:10px 16px;
+margin:5px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.nav-buttons a:hover{
+background:#ff7b00;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<header>
+<h1>Lecture 4</h1>
+<p>Tables, Div, Span, and Layout Design in HTML</p>
+</header>
+
+<div style="padding:25px">
+
+
+<div class="section">
+
+<h2>1. HTML Tables (&lt;table&gt;)</h2>
+
+<p>
+HTML tables are used to display data in rows and columns.
+They are useful when information needs to be presented in a structured format.
+</p>
+
+<h3>Basic Structure</h3>
+
+<ul>
+<li>&lt;table&gt; – Defines a table</li>
+<li>&lt;tr&gt; – Table row</li>
+<li>&lt;th&gt; – Table header</li>
+<li>&lt;td&gt; – Table data</li>
+</ul>
+
+<h3>Important Attributes</h3>
+
+<ul>
+<li>border – Adds border around table</li>
+<li>cellpadding – Space inside cells</li>
+<li>cellspacing – Space between cells</li>
+</ul>
+
+<h3>Merging Cells</h3>
+
+<ul>
+<li>colspan – Merge columns</li>
+<li>rowspan – Merge rows</li>
+</ul>
+
+<div class="examples">
+<b>Important:</b> Tables should only be used for displaying data,
+not for page layout design.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. The Div Element (&lt;div&gt;)</h2>
+
+<p>
+The &lt;div&gt; element is a block-level container used to group
+larger sections of content on a webpage.
+</p>
+
+<ul>
+<li>Creates a new line</li>
+<li>Takes full width of the page</li>
+<li>Used to divide webpage sections such as header, content, and footer</li>
+<li>Helps in building flexible layouts</li>
+</ul>
+
+<div class="examples">
+Example use: Page header, navigation bar, main content, sidebar, footer
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. The Span Element (&lt;span&gt;)</h2>
+
+<p>
+The &lt;span&gt; element is an inline container used to style
+small parts of text inside a paragraph or heading.
+</p>
+
+<ul>
+<li>Does not start on a new line</li>
+<li>Used to apply style to a small text portion</li>
+<li>Works well with CSS styling</li>
+</ul>
+
+<div class="examples">
+Example: Highlighting a word inside a paragraph using CSS.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Div vs Span: Key Difference</h2>
+
+<h3>Div (Block-Level)</h3>
+
+<ul>
+<li>Starts on a new line</li>
+<li>Takes full width available</li>
+<li>Used for grouping larger sections of content</li>
+</ul>
+
+<h3>Span (Inline)</h3>
+
+<ul>
+<li>Stays on the same line</li>
+<li>Takes only the required width</li>
+<li>Used for styling small text sections</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Modern Layout Best Practices</h2>
+
+<ul>
+<li>Use &lt;div&gt; for page structure and layout sections</li>
+<li>Use &lt;span&gt; for styling inline text</li>
+<li>Avoid using tables for webpage layout</li>
+<li>Use tables only for displaying tabular data</li>
+<li>Nesting multiple &lt;div&gt; elements helps build complex layouts</li>
+</ul>
+
+<div class="examples">
+<b>Best Practice:</b> Combine HTML structure with CSS (Flexbox or Grid)
+to create responsive and modern webpage layouts.
+</div>
+
+</div>
+
+
+<div class="nav-buttons">
+
+<a href="Homeindex.html">Home</a>
+<a href="lecture3.html">Previous</a>
+<a href="lecture5.html">Next</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

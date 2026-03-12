@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Lecture 8 - Web Technologies</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.section{
+background:#f9fbff;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+animation:fadeUp 0.8s ease;
+}
+
+.section h2{
+color:#2a5298;
+margin-bottom:10px;
+}
+
+.section ul{
+padding-left:20px;
+}
+
+.section li{
+margin:6px 0;
+}
+
+.examples{
+background:#eef3ff;
+padding:10px;
+border-left:5px solid #2a5298;
+margin-top:10px;
+}
+
+.nav-buttons{
+text-align:center;
+margin-top:30px;
+}
+
+.nav-buttons a{
+background:#2a5298;
+color:white;
+padding:10px 16px;
+margin:5px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.nav-buttons a:hover{
+background:#ff7b00;
+transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<header>
+<h1>Lecture 8</h1>
+<p>CSS Selectors</p>
+</header>
+
+<div style="padding:25px">
+
+<div class="section">
+
+<h2>1. Descendant Selector</h2>
+
+<p>
+Selects all elements that are descendants (children, grandchildren, etc.) of a specified ancestor.
+</p>
+
+<ul>
+<li><b>Syntax:</b> ancestor descendant (e.g., ol li)</li>
+<li><b>Example:</b> 
+<pre>
+ol li {
+    color: blue;
+}
+</pre>
+This styles all &lt;li&gt; inside an &lt;ol&gt;, including nested lists.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>2. Child Selector</h2>
+
+<p>
+Selects only immediate children of a parent element.
+</p>
+
+<ul>
+<li><b>Syntax:</b> parent > child</li>
+<li><b>Example:</b>
+<pre>
+ol > li {
+    color: red;
+}
+</pre>
+Only the top-level &lt;li&gt; inside &lt;ol&gt; are styled; nested items are ignored.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>3. Attribute Selector</h2>
+
+<p>
+Selects elements based on attributes and their values.
+</p>
+
+<ul>
+<li><b>Syntax:</b> element[attribute="value"]</li>
+<li><b>Example:</b>
+<pre>
+a[href="https://facebook.com"] {
+    color: blue;
+}
+</pre>
+Applies styles only to &lt;a&gt; tags with that exact href value.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>4. Pseudo-Class Selector</h2>
+
+<p>
+Selects elements based on state or user interaction rather than document structure.
+</p>
+
+<ul>
+<li><b>Syntax:</b> element:pseudo-class</li>
+<li><b>Example:</b>
+<pre>
+button:hover {
+    background-color: orange;
+}
+</pre>
+Changes button color when the user hovers over it.</li>
+</ul>
+
+</div>
+
+<div class="nav-buttons">
+
+<a href="Homeindex.html">Home</a>
+<a href="lecture7.html">Previous</a>
+<a href="#" id="nextBtn">Next</a>
+
+</div>
+
+<script>
+const nextButton = document.getElementById('nextBtn');
+
+nextButton.addEventListener('click', function(e){
+    e.preventDefault(); 
+
+    nextButton.classList.add('shake');
+    setTimeout(() => {
+        nextButton.classList.remove('shake');
+    }, 500);
+
+    alert("🎉 This is the last lecture!");
+});
+</script>
+
+<style>
+@keyframes shakeAnim{
+0% { transform: translateX(0); }
+20% { transform: translateX(-5px); }
+40% { transform: translateX(5px); }
+60% { transform: translateX(-5px); }
+80% { transform: translateX(5px); }
+100% { transform: translateX(0); }
+}
+
+.shake{
+animation:shakeAnim 0.5s;
+}
+</style>
+
+</div>
+
+</div>
+
+</body>
+</html>

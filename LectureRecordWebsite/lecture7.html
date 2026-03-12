@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Lecture 7 - Web Technologies</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.section{
+background:#f9fbff;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+animation:fadeUp 0.8s ease;
+}
+
+.section h2{
+color:#2a5298;
+margin-bottom:10px;
+}
+
+.section ul{
+padding-left:20px;
+}
+
+.section li{
+margin:6px 0;
+}
+
+.examples{
+background:#eef3ff;
+padding:10px;
+border-left:5px solid #2a5298;
+margin-top:10px;
+}
+
+.nav-buttons{
+text-align:center;
+margin-top:30px;
+}
+
+.nav-buttons a{
+background:#2a5298;
+color:white;
+padding:10px 16px;
+margin:5px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.nav-buttons a:hover{
+background:#ff7b00;
+transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<header>
+<h1>Lecture 7</h1>
+<p>Introduction to CSS</p>
+</header>
+
+<div style="padding:25px">
+
+<div class="section">
+
+<h2>1. What is CSS?</h2>
+
+<p>
+CSS (Cascading Style Sheets) is the language used to style
+webpages. It controls how HTML elements appear on the screen.
+</p>
+
+<ul>
+<li>Defines colors, layout, fonts, and spacing</li>
+<li>Allows styling of multiple pages using one stylesheet</li>
+<li>External styles are stored in <b>.css files</b></li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. CSS Syntax</h2>
+
+<p>A CSS rule contains a selector and a declaration block.</p>
+
+<div class="examples">
+
+Example:
+
+<pre>
+h1 {
+  color: red;
+  text-align: right;
+}
+</pre>
+
+<b>Explanation:</b>
+
+<ul>
+<li><b>h1</b> → selector</li>
+<li><b>color</b> → property</li>
+<li><b>red</b> → value</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Ways to Use CSS</h2>
+
+<ul>
+
+<li><b>Inline CSS</b>  
+Applied directly inside an HTML element using the <b>style</b> attribute.</li>
+
+<li><b>Internal CSS</b>  
+Defined inside a <b>&lt;style&gt;</b> tag within the HTML <b>&lt;head&gt;</b>.</li>
+
+<li><b>External CSS</b>  
+Stored in a separate <b>.css file</b> and linked to HTML (best practice).</li>
+
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Typeface vs Font</h2>
+
+<ul>
+
+<li><b>Typeface:</b> The design of characters (e.g., Arial, Helvetica).</li>
+
+<li><b>Font:</b> A specific size, weight, or style of a typeface.</li>
+
+</ul>
+
+<h3>Common Font Families</h3>
+
+<ul>
+<li><b>Serif</b> – Traditional style with strokes (Times New Roman)</li>
+<li><b>Sans-serif</b> – Clean modern fonts (Arial, Helvetica)</li>
+<li><b>Monospace</b> – Same width characters (Courier New)</li>
+<li><b>Cursive</b> – Handwriting style fonts</li>
+<li><b>Fantasy</b> – Decorative fonts</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. The CSS Box Model</h2>
+
+<p>Every HTML element is treated as a rectangular box.</p>
+
+<ul>
+
+<li><b>Content</b> – The text or image inside the element</li>
+
+<li><b>Padding</b> – Space between content and border</li>
+
+<li><b>Border</b> – Edge surrounding the padding</li>
+
+<li><b>Margin</b> – Space outside the border separating elements</li>
+
+</ul>
+
+<div class="examples">
+Content → Padding → Border → Margin
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Identifying Elements: ID vs Class</h2>
+
+<ul>
+
+<li><b>ID (#)</b>  
+Used to uniquely identify one element on a page.</li>
+
+<li><b>Class (.)</b>  
+Can be reused for multiple elements.</li>
+
+</ul>
+
+<div class="examples">
+Example CSS:
+
+<pre>
+#header{
+background:blue;
+}
+
+.button{
+color:white;
+}
+</pre>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. CSS Specificity (Precedence)</h2>
+
+<p>
+Specificity determines which CSS rule is applied when
+multiple rules target the same element.
+</p>
+
+<h3>Order of Priority</h3>
+
+<ul>
+
+<li>Inline Styles</li>
+
+<li>ID Selectors</li>
+
+<li>Class Selectors</li>
+
+<li>Element Selectors</li>
+
+</ul>
+
+<div class="examples">
+Example: An <b>ID selector</b> will override a <b>type selector</b>.
+</div>
+
+</div>
+
+
+<div class="nav-buttons">
+
+<a href="Homeindex.html">Home</a>
+<a href="lecture6.html">Previous</a>
+<a href="lecture8.html">Next</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

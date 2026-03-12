@@ -1,0 +1,172 @@
+body{
+font-family:'Segoe UI', sans-serif;
+background:linear-gradient(to right,#4facfe,#00f2fe);
+margin:0;
+padding:40px;
+animation:pageFade 1s ease;
+}
+
+/* Page Animation */
+
+@keyframes pageFade{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+/* Main Card */
+
+.card{
+width:750px;
+margin:auto;
+background:white;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+padding-bottom:20px;
+animation:cardSlide 0.8s ease;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+@keyframes cardSlide{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Header */
+
+header{
+background:linear-gradient(45deg,#1e3c72,#2a5298);
+color:white;
+text-align:center;
+padding:20px;
+border-radius:10px 10px 0 0;
+animation:headerFade 1s ease;
+}
+
+@keyframes headerFade{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+header h1{
+margin:0;
+}
+
+header p{
+margin-top:5px;
+opacity:0.9;
+}
+
+/* Heading */
+
+h2{
+text-align:center;
+margin-top:20px;
+color:#333;
+animation:fadeUp 1s ease;
+}
+
+/* Table */
+
+table{
+width:90%;
+margin:auto;
+border-collapse:collapse;
+margin-top:20px;
+animation:fadeUp 1s ease;
+}
+
+th{
+background:#2a5298;
+color:white;
+padding:12px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+tr{
+transition:0.3s;
+}
+
+tr:hover{
+background:#f5f7ff;
+transform:scale(1.02);
+}
+
+/* Button */
+
+.btn{
+background:#2a5298;
+color:white;
+padding:6px 14px;
+border-radius:5px;
+text-decoration:none;
+transition:all 0.3s ease;
+}
+
+.btn:hover{
+background:#ff7b00;
+transform:scale(1.08);
+}
+
+/* Small Progress Bar */
+
+.progress-bar-small{
+width:100%;
+background:#e0e0e0;
+height:8px;
+border-radius:20px;
+overflow:hidden;
+margin-top:5px;
+}
+
+.progress-fill-small{
+height:100%;
+background:linear-gradient(90deg,#2a5298,#00c6ff);
+animation:progressMove 2s ease;
+}
+
+/* Progress Animation */
+
+@keyframes progressMove{
+from{
+width:0;
+}
+}
+
+/* Section Animation */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
